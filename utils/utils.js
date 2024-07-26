@@ -30,13 +30,9 @@ const parseToken =  async (req, res, next) => {
                     id: userId
                 },
                 include: {
-                    orders: {
+                    categories: {
                         include: {
-                            orderProducts: {
-                                include: {
-                                    product: true
-                                }
-                            }
+                            games: true
                         }
                     }
                 
