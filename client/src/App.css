@@ -1,42 +1,126 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+
+#footer {
+  height: 575px;
+  width: 100%;
+  background-color: #235945;
+  box-shadow: inset  #0000007c 0px 7px 5px 2px;
+  display: flex;
+  flex-direction: column;
+
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+#topFooter{
+  /* border: 2px solid; */
+  padding-top: 70px;
+  display: flex;
+  flex: row;
+  padding-bottom: 30px;
+  padding-left: 70px;
+  padding-right: 20px;
+  justify-content: center;
+
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+#details{
+  /* border: 2px solid; */
+  height: 400px;
+  width: 900px;
+  display: flex;
+  flex: row;
+  margin-left: 80px;
+}
+
+.detailsInfo{
+  height: 300px;
+  width: 200px;
+  /* border: 2px solid; */
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 10px;
+  margin-left: 20px;
+  > h2 {
+    font-family: 'Eugusto';
+    color: #fbfdf2;
+    font-size: 30px;
+    margin-bottom: 0px;
   }
-  to {
-    transform: rotate(360deg);
+  > p {
+    font-family: 'Urbanist';
+    color: white;
+    font-size: 19px;
+    text-align: left;
+    margin-bottom: 0px;
+  }
+  > a > p {
+    font-family: 'Urbanist';
+    color: white;
+    font-size: 19px;
+    text-align: left;
+    margin-bottom: 0px;
+  }
+
+}
+
+
+
+
+#bottomFooter{
+  /* border: 2px solid; */
+  height: 125px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid; */
+  margin-left: 210px;
+  > p {
+    font-family: 'Urbanist';
+    color: white;
+    font-size: 19px;
+    text-align: left;
+    margin-bottom: 0px;
+    text-align: center;
+    margin: 0px;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.copyrighticon{
+  color: white;
+  margin: 2px;
 }
 
-.card {
-  padding: 2em;
+#icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  margin-right: 225px;
+  justify-content: space-around;
+}
+.facebookIcon {
+  color: white;
+}
+.twitterIcon{
+  color: white;
+}
+.youtubeIcon{
+  color:white;
+}
+.linkedIn{
+  color: white;
 }
 
-.read-the-docs {
-  color: #888;
-}
+
+
+
+
+
+

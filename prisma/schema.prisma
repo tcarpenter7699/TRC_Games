@@ -22,15 +22,7 @@ model Games {
   year          String
   platform      String?
   description   String?
-  categ_id      Int
-  category      Categories @relation(fields: [categ_id], references: [id])
-  reviews       Reviews[]
-}
-
-model Categories {
-  id        Int     @id @default(autoincrement())
-  name      String
-  games     Games[]
+  category      String
 }
 
 model Users {
@@ -39,18 +31,9 @@ model Users {
   lastName  String
   username  String @unique
   password  String
-  reviews   Reviews[]
 }
 
-model Reviews {
-  id        Int     @id @default(autoincrement())
-  content   String
-  rating    Decimal
-  userId    Int
-  user      Users @relation(fields: [userId], references: [id])
-  gameId    Int
-  game      Games @relation(fields: [gameId], references: [id])
-}
+
 
 // model Administrators {
 //   id        Int @id @default(autoincrement())
