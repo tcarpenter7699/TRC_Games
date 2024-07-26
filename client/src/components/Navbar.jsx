@@ -1,7 +1,7 @@
 import React from "react";
 import {Link} from "react-router-dom";
 // import logo from "../assets/logo.png";
-import { AccountCircle, RamenDining, ShoppingBasket } from "@mui/icons-material";
+import { AccountCircle } from "@mui/icons-material";
 
 
 

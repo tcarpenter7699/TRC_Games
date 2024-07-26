@@ -1,15 +1,11 @@
-import { Link } from "react-router-dom";
-import { GoogleMap, Marker, useLoadScript} from "@react-google-maps/api";
-import { useMemo } from "react";
+// import { Link } from "react-router-dom";
+// import { GoogleMap, Marker, useLoadScript} from "@react-google-maps/api";
+// import { useMemo } from "react";
 import { Copyright, Facebook, LinkedIn, Twitter, YouTube } from "@mui/icons-material";
 
 const Footer = () => {
 
-    const key = "AIzaSyDElJVCbzaaeZNOqH7LxEem5zFvb8jcWHg";
-    const {isLoaded} = useLoadScript({
-        googleMapsApiKey: key,
-    });
-    const center = useMemo(()=> ({lat: 42.34110, lng: -83.05527 }), []);
+    
 
 
     return (

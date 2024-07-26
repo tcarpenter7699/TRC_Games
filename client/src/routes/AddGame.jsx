@@ -22,7 +22,7 @@ const addProduct = () => {
                     developer: gamedeveloper,
                     year: gameyear, 
                     platform: gameplatform, 
-                    categ_id: parseInt(gamecategory),
+                    category: gamecategory,
                     description: gamedescription,
                     
                 }),
@@ -44,7 +44,7 @@ const addProduct = () => {
                     <input type="text" onChange={(e)=>{setDeveloper(e.target.value)}} placeholder="Developer" required/>
                     <input type="text" onChange={(e)=>{setYear(e.target.value)}} placeholder="Year" required/>
                     <input type="text" onChange={(e)=>{setPlatform(e.target.value)}} placeholder="Platform" required/>
-                    <input type="text" onChange={(e)=>{setCategory(e.target.value)}} placeholder="Category id" required/>
+                    <input type="text" onChange={(e)=>{setCategory(e.target.value)}} placeholder="Category" required/>
                     <input type="text" onChange={(e)=>{setDescription(e.target.value)}} placeholder="Description"/>
                     <input type="submit"/>
                 </form>

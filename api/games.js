@@ -7,9 +7,6 @@ const prisma = new PrismaClient();
 gameRouter.get('/', async (req, res) => {
     try {
         const games = await prisma.games.findMany({
-            include: {
-                category: true,
-            },
         });
         res.send(games);
     } catch(err) {
@@ -24,9 +21,6 @@ gameRouter.get('/:id', async (req, res) => {
         const game = await prisma.games.findUnique({
             where: {
                 id: parseInt(req.params.id)
-            },
-            include: {
-                category: true,
             },
         });
         res.send(game);

@@ -76,17 +76,17 @@ const AllGames = () => {
 
 
     
-    // if(isLoading){
-    //     return(
-    //         <h1>Loading . . .</h1>
-    //     )
-    // }
+    if(isLoading){
+        return(
+            <h1>Loading . . .</h1>
+        )
+    }
     console.log(games)
-    console.log(categories)
+    // console.log(categories)
     return (
         <>
             <div className="menuContent">
-                <div className="categories">
+                {/* <div className="categories">
                 {
                     categories.map((category)=> {
                         return(
@@ -109,8 +109,8 @@ const AllGames = () => {
                 <Close/>
                 </div>
                 
-                </div>
-                <div className="allProducts">
+                </div> */}
+                {/* <div className="allGames">
                 {filteredGames.map(item => {
                     return (
                         <div className="itemCard" key={item.id}>
@@ -119,20 +119,20 @@ const AllGames = () => {
 
 
                             <p>${item.price}</p>
-                            <div>
-                                <Link to={`/menu/${item.id}`}><button className="toSingleItem">Order Now</button></Link>
+                            <div> */}
+                                {/* <Link to={`/menu/${item.id}`}><button className="toSingleItem">Order Now</button></Link> */}
                                 {/* {admin?<div onClick={()=>{deleteItem(item.id)}} className="deleteReview"><Delete/></div>:<></>} */}
-                            </div>
+                            {/* </div>
                         </div>
                     
                     )
-                })}
+                })} */}
                 {/* {admin?<Link to="/admin/newproduct">
                     <div className="itemCard">
                     <Add/>
                     </div>
                 </Link>:<></>} */}
-                </div>
+                {/* </div> */}
             </div>
         </>
     );
